@@ -1,0 +1,95 @@
+:root {
+    /*color*/
+    --color-white: #f8f9fa;
+
+    /*font-family*/
+    --font-family: 'Roboto', sans-serif;
+
+    /*font-weights*/
+    --font-weight1: 100;
+    --font-weight2: 300;
+    --font-weight3: 500;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    color: var(--color-white);
+    font-family: var(--font-family);
+}
+
+header {
+    display: flex;
+    background-color: transparent;
+    padding: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    right: 0;
+}
+
+.D {
+    font-weight: var(--font-weight3);
+    font-size: 1.5rem;
+}
+
+li a {
+    font-weight: var(--font-weight2);
+}
+
+li a, .D {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    padding: 14px 10px;
+}
+
+.information {
+    display: grid;
+    place-items: center;
+    margin-top: 10rem;
+}
+
+.heading {
+    font-weight: var(--font-weight3);
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+}
+
+.descr {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.bathoni {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 15px;
+    width: 170px;
+    margin: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-white);
+    background: none;
+    color: var(--color-white);
+}
+
+button:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+    transition-duration: 1s;
+    color: white;
+}
